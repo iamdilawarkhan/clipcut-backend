@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: clipcut-backend
+    runtime: docker
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: WHISPER_MODEL
+        value: tiny
